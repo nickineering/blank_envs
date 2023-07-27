@@ -1,0 +1,29 @@
+# Python caching
+__pycache__/
+
+# Mac file metadata
+.DS_Store
+
+# Python Poetry metadata
+*.egg-info/
+
+# Python import sorting config. Needed to autosort dotfiles
+.isort.cfg
+
+# Code coverage data from Jest among others
+coverage
+
+# JavaScript dependencies
+node_modules/
+
+# Pytest code coverage
+.coverage
+
+# Python testing
+.pytest_cache/
+
+# Type hinting
+.mypy_cache/
+
+# Files compiled by webpack
+js/
