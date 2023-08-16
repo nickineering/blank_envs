@@ -44,7 +44,7 @@ class Sensor:
         event_types = ["nominal", "info", "warning", "error", "critical"]
         return random.choices(event_types, cum_weights=[60, 24, 10, 5, 1], k=1)[0]
 
-    async def do_work(self):
+    def do_work(self):
         time.sleep(random.uniform(0.1, 1.5))
 
     @property
@@ -59,10 +59,10 @@ class Sensor:
         }
 
 
-def send_state(state):
+async def send_state(state):
     # TODO: Implement me
     try:
-        result = requests.post("https://en6msadu8lecg.x.pipedream.net/", json=state, timeout=10)
+        result = await requests.post("https://en6msadu8lecg.x.pipedream.net/", json=state, timeout=10)
         print(result)
         return True
     except requests.RequestException as e:

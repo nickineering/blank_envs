@@ -6,7 +6,7 @@ import requests
 @patch("requests.post")
 def test_send_state_success(post_mock):
     response = send_state({"id": 1})
-    assert response == True
+    assert response is True
     post_mock.assert_called_once_with("https://en6msadu8lecg.x.pipedream.net/", json={"id": 1})
 
 
@@ -14,5 +14,5 @@ def test_send_state_success(post_mock):
 def test_send_state_fail(post_mock):
     post_mock.side_effect = requests.RequestException()
     response = send_state({"id": 1})
-    assert response == False
+    assert response is False
     post_mock.assert_called_once_with("https://en6msadu8lecg.x.pipedream.net/", json={"id": 1})
