@@ -12,6 +12,8 @@ import ErrorPage from "./routes/ErrorPage";
 import { Home } from "./routes/Home";
 import { Root } from "./routes/Root";
 
+import "./main.css";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
