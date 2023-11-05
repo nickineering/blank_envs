@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@tanstack/react-query-devtools": "^5.7.2",
+    "@types/jest": "^29.5.7",
     "@types/react": "^18.2.35",
     "@types/react-dom": "^18.2.14",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
@@ -16,6 +17,9 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
     "vite": "^4.5.0"
   },
@@ -26,6 +30,7 @@
     "dev": "vite",
     "lint": "eslint . --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
+    "test": "jest",
     "types": "tsc"
   },
   "type": "module",
