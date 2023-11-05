@@ -11,6 +11,13 @@
       "program": "${file}",
       "console": "integratedTerminal",
       "justMyCode": true
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Vite: Launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/vite_scratchpad"
     }
-  ]
+  ],
 }
