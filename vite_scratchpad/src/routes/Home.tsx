@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useRepo } from "../queries/useRepo";
 
 export function Home() {

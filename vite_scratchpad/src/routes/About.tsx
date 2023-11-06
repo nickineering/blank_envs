@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export function About() {
   return (
     <div>
@@ -8,11 +6,12 @@ export function About() {
       <a
         target="_blank"
         href="https://icons8.com/icon/IDHst7MTjBqX/starburst-shape"
+        rel="noreferrer"
       >
         Starburst Shape
       </a>{" "}
       icon by{" "}
-      <a target="_blank" href="https://icons8.com">
+      <a target="_blank" href="https://icons8.com" rel="noreferrer">
         Icons8
       </a>
     </div>
