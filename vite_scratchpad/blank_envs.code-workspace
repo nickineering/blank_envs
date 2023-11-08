@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "vite_scratchpad",
+			"path": "."
+		},
+		{
+			"name": "react_scratchpad",
+			"path": "../react_scratchpad"
+		}
+	],
+	"settings": {
+		"jest.disabledWorkspaceFolders": [
+			"blank_envs"
+		]
+	}
+}
