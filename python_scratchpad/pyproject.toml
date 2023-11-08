@@ -1,19 +1,19 @@
 [tool.poetry]
-name = "live-coding"
+name = "python-scratchpad"
 version = "0.1.0"
-description = "Live coding scratchpad"
+description = ""
 authors = ["Nicholas Ferrara <nferrara100@gmail.com>"]
+license = "MIT"
 readme = "README.md"
-packages = [{include = "live_coding"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 requests = "^2.31.0"
 
+
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.4.0"
-mypy = "^1.4.1"
-types-requests = "^2.31.0.2"
+pytest = "^7.4.3"
+mypy = "^1.6.1"
 
 [build-system]
 requires = ["poetry-core"]

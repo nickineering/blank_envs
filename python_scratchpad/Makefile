@@ -4,8 +4,8 @@ all: run
 
 # Run the application locally
 run:
-	python main.py
+	poetry run python main.py
 
 # Run tests
 test:
-	mypy main.py && pytest
+	poetry run mypy main.py && poetry run pytest
