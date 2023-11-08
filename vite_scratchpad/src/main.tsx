@@ -15,6 +15,7 @@ import { Home } from "./routes/Home";
 import { Root } from "./routes/Root";
 
 import "./main.css";
+import { Sources } from "./routes/Sources";
 
 const queryClient = new QueryClient();
 
@@ -23,9 +24,10 @@ const router = createBrowserRouter(
     <Route path="/" element={<Root />}>
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="sources" element={<Sources />} />
       <Route path="*" element={<ErrorPage />} />
-    </Route>,
-  ),
+    </Route>
+  )
 );
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -34,5 +36,5 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <RouterProvider router={router} />
       <ReactQueryDevtools />
     </QueryClientProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
