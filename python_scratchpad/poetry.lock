@@ -246,6 +246,20 @@ pluggy = ">=0.12,<2.0"
 testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
 
 [[package]]
+name = "python-dotenv"
+version = "1.0.0"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-dotenv-1.0.0.tar.gz", hash = "sha256:a8df96034aae6d2d50a4ebe8216326c61c3eb64836776504fcca410e5937a3ba"},
+    {file = "python_dotenv-1.0.0-py3-none-any.whl", hash = "sha256:f5971a9226b701070a4bf2c38c89e5a3f0d64de8debda981d1db98583009122a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "requests"
 version = "2.31.0"
 description = "Python HTTP for Humans."
@@ -265,6 +279,36 @@ urllib3 = ">=1.21.1,<3"
 [package.extras]
 socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
+
+[[package]]
+name = "requests-mock"
+version = "1.11.0"
+description = "Mock out responses from the requests package"
+optional = false
+python-versions = "*"
+files = [
+    {file = "requests-mock-1.11.0.tar.gz", hash = "sha256:ef10b572b489a5f28e09b708697208c4a3b2b89ef80a9f01584340ea357ec3c4"},
+    {file = "requests_mock-1.11.0-py2.py3-none-any.whl", hash = "sha256:f7fae383f228633f6bececebdab236c478ace2284d6292c6e7e2867b9ab74d15"},
+]
+
+[package.dependencies]
+requests = ">=2.3,<3"
+six = "*"
+
+[package.extras]
+fixture = ["fixtures"]
+test = ["fixtures", "mock", "purl", "pytest", "requests-futures", "sphinx", "testtools"]
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+files = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
 
 [[package]]
 name = "typing-extensions"
@@ -297,4 +341,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "ad100e82914b244a99378d7cceed86377c6a88dbcea7d9eec90393bd60216b9a"
+content-hash = "d8d4cf0d6e9acb0d5ac941c2fe5e5c96131d0ed909cc06724dcb27b39d94e777"
