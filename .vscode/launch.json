@@ -13,6 +13,14 @@
       "justMyCode": true
     },
     {
+      "name": "Python: Main",
+      "type": "python",
+      "request": "launch",
+      "program": "python_scratchpad/src/main.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
       "type": "chrome",
       "request": "launch",
       "name": "Vite: Launch",
