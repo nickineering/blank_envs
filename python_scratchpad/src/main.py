@@ -13,7 +13,7 @@ def get_api_response():
         "X-RapidAPI-Key": os.environ["X-RAPIDAPI-KEY"],
         "X-RapidAPI-Host": os.environ["X-RAPDIDAPI-HOST"],
     }
-    response = get(url, headers=headers, params=querystring)
+    response = get(url, headers=headers, params=querystring, timeout=5)
     return response.json()
 
 
