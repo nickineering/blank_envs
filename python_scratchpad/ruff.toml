@@ -1,1 +1,4 @@
 extend = "nickineering-ruff-base.toml"
+
+target-version = "py312"
+src = ["src"]
