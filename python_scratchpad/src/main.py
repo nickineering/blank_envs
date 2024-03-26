@@ -1,21 +1,10 @@
-import os
-
-from dotenv import load_dotenv
-from requests import get
-
-
-def get_api_response():
-    load_dotenv()
-
-    url = "https://bloomberg-market-and-financial-news.p.rapidapi.com/market/auto-complete"
-    querystring = {"query": "apple"}
-    headers = {
-        "X-RapidAPI-Key": os.environ["X-RAPIDAPI-KEY"],
-        "X-RapidAPI-Host": os.environ["X-RAPDIDAPI-HOST"],
-    }
-    response = get(url, headers=headers, params=querystring, timeout=5)
-    return response.json()
+def get_second_small_num(nums: list[int]):
+    nums_set = set(nums)
+    if len(nums_set) < 2:
+        return None
+    nums_result = sorted(nums_set)
+    return nums_result[1]
 
 
 if __name__ == "__main__":
-    print(get_api_response())
+    pass

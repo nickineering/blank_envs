@@ -1,5 +1,5 @@
 {
-    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.editor.enableAutoCompletions": false,
     "jest.jestCommandLine": "npm test --",
     "jest.rootPath": "vite_scratchpad/",
 }
