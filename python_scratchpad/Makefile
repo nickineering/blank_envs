@@ -19,3 +19,6 @@ test:
 # Check types
 types:
 	poetry run mypy src/
+
+lint:
+	poetry run ruff format && poetry run ruff check --fix
