@@ -20,5 +20,6 @@ test:
 types:
 	poetry run mypy src/
 
+# Lint and format the code
 lint:
 	poetry run ruff format && poetry run ruff check --fix
