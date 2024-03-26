@@ -11,6 +11,7 @@ packages = [{ include = "src" }]
 python = "^3.12"
 requests = "^2.31.0"
 python-dotenv = "^1.0.0"
+nickineering-ruff-config = "^0.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -23,3 +24,6 @@ ruff = "^0.3.4"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+update-ruff-base = "nickineering_ruff_config:update_ruff_base"

@@ -30,3 +30,6 @@ js/
 
 # Environment variables
 .env
+
+# Base Ruff Config
+nickineering-ruff-base.toml

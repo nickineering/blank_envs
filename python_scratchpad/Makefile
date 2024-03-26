@@ -5,6 +5,7 @@ all: run
 # Prepare for first run
 configure:
 	poetry install
+	poetry run update-ruff-base
 	cp src/.env.example src/.env
 	echo "Please edit src/.env file with your credentials"
 

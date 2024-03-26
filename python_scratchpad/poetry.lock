@@ -201,6 +201,17 @@ files = [
 ]
 
 [[package]]
+name = "nickineering-ruff-config"
+version = "0.2.0"
+description = "A shareable Ruff starting config designed to get as much as possibly from Ruff quickly."
+optional = false
+python-versions = "<4.0,>=3.7"
+files = [
+    {file = "nickineering_ruff_config-0.2.0-py3-none-any.whl", hash = "sha256:f9c5fe57dcc73a07b202f0ccd54c70843be1e8c1b3d7c9aa2ae3271d0cffda1a"},
+    {file = "nickineering_ruff_config-0.2.0.tar.gz", hash = "sha256:be7677de1ac2b64e154c3f21a8ae693cd2b858466c72db5739c7e441e2765567"},
+]
+
+[[package]]
 name = "packaging"
 version = "24.0"
 description = "Core utilities for Python packages"
@@ -382,4 +393,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "c6f7399eaf76bbad95463e632dab5d912a0e7cfef8c00e8dd997efd5e9de33db"
+content-hash = "0f762569264fffa81eb5f7166edb3b3dc9e802991b87dba1388621d86ae01c70"
