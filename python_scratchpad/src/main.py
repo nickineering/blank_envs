@@ -1,11 +1,14 @@
 import os
+from typing import Any
 
 from dotenv import load_dotenv
 from requests import get
 
+# ruff: noqa:T201
 
-def get_api_response():
-    load_dotenv()
+
+def get_api_response() -> Any:  # noqa: ANN401
+    _ = load_dotenv()
 
     url = "https://bloomberg-market-and-financial-news.p.rapidapi.com/market/auto-complete"
     querystring = {"query": "apple"}

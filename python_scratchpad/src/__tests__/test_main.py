@@ -1,6 +1,6 @@
 import requests_mock
 
-from src.main import get_api_response
+from ..main import get_api_response
 
 
 def test_get_api_response():
