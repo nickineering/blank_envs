@@ -33,3 +33,6 @@ js/
 
 # Base Ruff Config
 nickineering-ruff-base.toml
+
+# Ruff cache
+.ruff_cache/

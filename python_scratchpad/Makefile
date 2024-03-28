@@ -3,7 +3,7 @@ SHELL=/bin/bash
 all: run
 
 # Prepare for first run
-configure:
+setup:
 	poetry install
 	poetry run update-ruff-base
 	cp src/.env.example src/.env
