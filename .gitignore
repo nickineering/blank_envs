@@ -31,7 +31,7 @@ js/
 # Environment variables
 .env
 
-# Base Ruff Config
+# Automatically updated configuration file from nickineering-ruff-config
 nickineering-ruff-base.toml
 
 # Ruff cache
