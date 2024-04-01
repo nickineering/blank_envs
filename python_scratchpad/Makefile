@@ -19,7 +19,7 @@ test:
 
 # Check types
 types:
-	poetry run mypy src/
+	poetry run pyright src/
 
 # Lint and format the code
 lint:
