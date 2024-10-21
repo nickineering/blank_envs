@@ -1,0 +1,52 @@
+SHELL=/bin/bash
+
+# Build and run the application using Docker Compose
+all: build up
+
+setup:
+	ln -sf Makefile.docker Makefile
+	make setup-secrets
+	make update-ruff-base
+
+# Build the Docker image
+build:
+	docker compose build
+
+# Run the application locally
+up:
+	docker compose up
+
+# Rerun the entry command in the Docker container
+rerun:
+	docker compose run --rm app poetry run python src/main.py
+
+# Run tests
+test:
+	docker compose run --rm app poetry run pytest
+
+# Check types
+types:
+	docker compose run --rm app poetry run pyright src/
+
+# Lint and format the code
+lint:
+	docker compose run --rm app poetry run ruff format && poetry run ruff check --fix
+
+# Stop the application
+down:
+	docker compose down
+
+# Clean up Docker resources
+clean:
+	docker compose down -v --rmi all --remove-orphans
+
+# Create a ruff base config file to reduce config verbosity
+update-ruff-base:
+	docker compose run --rm app poetry update ruff-base
+
+# Setup secrets
+setup-secrets:
+	@if [ ! -f .env ]; then \
+		cp src/.env.example src/.env; \
+		echo "Please update the src/.env file with your secrets."; \
+	fi
