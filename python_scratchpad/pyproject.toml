@@ -9,17 +9,18 @@ packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
-requests = "^2.31.0"
-python-dotenv = "^1.0.0"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
 nickineering-ruff-config = "^0.2.0"
+toml = "^0.10.2"
 
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.4.3"
-requests-mock = "^1.11.0"
-types-requests = "^2.31.0.10"
-ruff = "^0.3.4"
-pyright = "^1.1.356"
+pytest = "^8.3.3"
+requests-mock = "^1.12.1"
+types-requests = "^2.32.0.20241016"
+ruff = "^0.7.0"
+pyright = "^1.1.385"
 
 [build-system]
 requires = ["poetry-core"]

@@ -30,6 +30,10 @@ lint:
 update-ruff-base:
 	poetry update ruff-base
 
+# Upgrade all poetry dependencies to their latest versions
+make upgrade:
+	python scripts/upgrade_dependencies.py
+
 # Setup secrets
 setup-secrets:
 	@if [ ! -f .env ]; then \
