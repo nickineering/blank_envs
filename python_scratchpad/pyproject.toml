@@ -11,7 +11,6 @@ packages = [{ include = "src" }]
 python = "^3.12"
 requests = "^2.32.3"
 python-dotenv = "^1.0.1"
-nickineering-ruff-config = "^0.2.0"
 toml = "^0.10.2"
 
 
@@ -21,6 +20,7 @@ requests-mock = "^1.12.1"
 types-requests = "^2.32.0.20241016"
 ruff = "^0.7.0"
 pyright = "^1.1.385"
+nickineering-ruff-config = "^0.2.0"
 
 [build-system]
 requires = ["poetry-core"]
