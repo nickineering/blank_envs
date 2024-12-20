@@ -32,7 +32,7 @@ update-ruff-base:
 
 # Upgrade all poetry dependencies to their latest versions
 make upgrade:
-	python scripts/upgrade_dependencies.py
+	poetry run python src/scripts/upgrade_dependencies.py
 
 # Setup secrets
 setup-secrets:
