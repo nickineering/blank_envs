@@ -8,18 +8,18 @@ readme = "README.md"
 packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.13"
 requests = "^2.32.3"
 python-dotenv = "^1.0.1"
 toml = "^0.10.2"
 
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.3"
+pytest = "^8.3.4"
 requests-mock = "^1.12.1"
 types-requests = "^2.32.0.20241016"
-ruff = "^0.7.0"
-pyright = "^1.1.385"
+ruff = "^0.8.4"
+pyright = "^1.1.391"
 nickineering-ruff-config = "^0.2.0"
 
 [build-system]
