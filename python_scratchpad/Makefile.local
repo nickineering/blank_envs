@@ -28,7 +28,7 @@ lint:
 
 # Create a ruff base config file to reduce config verbosity
 update-ruff-base:
-	poetry update ruff-base
+	poetry run update-ruff-base
 
 # Upgrade all poetry dependencies to their latest versions
 make upgrade:
