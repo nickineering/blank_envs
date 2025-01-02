@@ -7,7 +7,7 @@
   "ignore": ["stubs/**"],
   "include": ["src"],
   "pythonPlatform": "all",
-  "pythonVersion": "3.12",
+  "pythonVersion": "3.13",
   "reportCallInDefaultInitializer": "error",
   "reportImplicitOverride": "error",
   "reportImportCycles": "error",

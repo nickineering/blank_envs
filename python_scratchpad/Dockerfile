@@ -1,6 +1,6 @@
 # Simple starter Dockerfile for a Python project using Poetry
 
-FROM python:3.12-slim
+FROM python:3.13-slim
 WORKDIR /app
 COPY pyproject.toml poetry.lock ./
 RUN pip install poetry
