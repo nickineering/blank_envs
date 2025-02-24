@@ -2,7 +2,7 @@
 name = "python-scratchpad"
 version = "0.1.0"
 description = ""
-authors = ["Nicholas Ferrara <nferrara100@gmail.com>"]
+authors = ["Nicholas Ferrara <git@nicholasferrara.net>"]
 license = "MIT"
 readme = "README.md"
 packages = [{ include = "src" }]
