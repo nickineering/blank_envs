@@ -8,3 +8,7 @@ updates:
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 50
+    prefix: "chore(deps)"
+    prefix-development: "chore(deps-dev)"
+    labels:
+      - "Dependencies"
