@@ -12,7 +12,7 @@ setup:
 
 # Run the application locally
 run:
-	poetry run python src/main.py
+	poetry run python src/download.py
 
 # Run tests
 test:
