@@ -16,8 +16,11 @@ build:
 up:
 	docker compose up
 
+x:
+	docker compose run --rm app $(filter-out $@,$(MAKECMDGOALS))
+
 # Rerun the entry command in the Docker container
-rerun:
+run:
 	docker compose run --rm app poetry run python src/main.py
 
 # Run tests

@@ -1,1 +1,1 @@
-Makefile.docker
+Makefile.local
