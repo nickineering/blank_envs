@@ -21,19 +21,19 @@ x:
 
 # Rerun the entry command in the Docker container
 run:
-	docker compose run --rm app poetry run python src/main.py
+	docker compose run --rm app uv run src/main.py
 
 # Run tests
 test:
-	docker compose run --rm app poetry run pytest
+	docker compose run --rm app uv run pytest
 
 # Check types
 types:
-	docker compose run --rm app poetry run pyright src/
+	docker compose run --rm app uv run pyright src/
 
 # Lint and format the code
 lint:
-	docker compose run --rm app poetry run ruff format && poetry run ruff check --fix
+	docker compose run --rm app uv run ruff format && uv run ruff check --fix
 
 # Stop the application
 down:
@@ -45,11 +45,11 @@ clean:
 
 # Create a ruff base config file to reduce config verbosity
 update-ruff-base:
-	docker compose run --rm app poetry run update-ruff-base
+	docker compose run --rm app uv run update-ruff-base
 
-# Upgrade all poetry dependencies to their latest versions
-make upgrade:
-	docker compose run --rm app poetry run python src/scripts/upgrade_dependencies.py
+# Example utility script
+make cool:
+	docker compose run --rm app uv run src/scripts/my_cool_script.py
 
 # Setup secrets
 setup-secrets:

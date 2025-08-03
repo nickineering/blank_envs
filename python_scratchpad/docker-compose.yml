@@ -8,4 +8,4 @@ services:
     volumes:
       - ./src:/app/src
       - ./pyproject.toml:/app/pyproject.toml
-      - ./poetry.lock:/app/poetry.lock
+      - ./uv.lock:/app/uv.lock

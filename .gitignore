@@ -4,9 +4,6 @@ __pycache__/
 # Mac file metadata
 .DS_Store
 
-# Python Poetry metadata
-*.egg-info/
-
 # Python import sorting config. Needed to autosort dotfiles
 .isort.cfg
 

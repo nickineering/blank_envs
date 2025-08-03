@@ -6,33 +6,33 @@ all: run
 # Prepare for first run
 setup:
 	ln -sf Makefile.local Makefile
-	poetry install
+	uv sync
 	make update-ruff-base
 	make setup-secrets
 
 # Run the application locally
 run:
-	poetry run python src/main.py
+	uv run src/main.py
 
 # Run tests
 test:
-	poetry run pytest
+	uv run pytest
 
 # Check types
 types:
-	poetry run pyright src/
+	uv run pyright src/
 
 # Lint and format the code
 lint:
-	poetry run ruff format && poetry run ruff check --fix
+	uv run ruff format && uv run ruff check --fix
 
 # Create a ruff base config file to reduce config verbosity
 update-ruff-base:
-	poetry run update-ruff-base
+	uv run update-ruff-base
 
-# Upgrade all poetry dependencies to their latest versions
-make upgrade:
-	poetry run python src/scripts/upgrade_dependencies.py
+# Example utility script
+make cool:
+	uv run src/scripts/my_cool_script.py
 
 # Setup secrets
 setup-secrets:

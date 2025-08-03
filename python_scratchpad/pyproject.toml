@@ -1,30 +1,36 @@
-[tool.poetry]
+[project]
 name = "python-scratchpad"
 version = "0.1.0"
 description = ""
-authors = ["Nicholas Ferrara <git@nicholasferrara.net>"]
-license = "MIT"
+authors = [{ name = "Nicholas Ferrara", email = "git@nicholasferrara.net" }]
+requires-python = "~=3.13.5"
 readme = "README.md"
-packages = [{ include = "src" }]
+license = "MIT"
+dependencies = [
+    "requests>=2.32.4,<3",
+    "python-dotenv>=1.1.1,<2",
+    "toml>=0.10.2,<0.11",
+]
 
-[tool.poetry.dependencies]
-python = "^3.13"
-requests = "^2.32.4"
-python-dotenv = "^1.1.1"
-toml = "^0.10.2"
+[project.scripts]
+update-ruff-base = "nickineering_ruff_config:update_ruff_base"
 
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1,<9",
+    "requests-mock>=1.12.1,<2",
+    "types-requests>=2.32.4.20250611,<3",
+    "ruff>=0.12.7,<0.13",
+    "pyright>=1.1.403,<2",
+    "nickineering-ruff-config>=0.2.0,<0.3",
+]
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.4.1"
-requests-mock = "^1.12.1"
-types-requests = "^2.32.4.20250611"
-ruff = "^0.12.7"
-pyright = "^1.1.403"
-nickineering-ruff-config = "^0.2.0"
+[tool.hatch.build.targets.sdist]
+include = ["src"]
+
+[tool.hatch.build.targets.wheel]
+include = ["src"]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.scripts]
-update-ruff-base = "nickineering_ruff_config:update_ruff_base"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
