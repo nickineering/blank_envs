@@ -1,8 +1,7 @@
 # Simple starter Dockerfile for a Python project using uv
 
-FROM python:3.13-slim
+FROM ghcr.io/astral-sh/uv:python3.13-bookworm
 WORKDIR /app
-COPY pyproject.toml uv.lock ./
-RUN pip install uv
+COPY pyproject.toml uv.lock README.md ./
 RUN uv sync
 CMD ["uv", "run", "src/main.py"]
