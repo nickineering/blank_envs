@@ -20,7 +20,7 @@ dev = [
     "pytest>=8.4.1,<9",
     "requests-mock>=1.12.1,<2",
     "types-requests>=2.32.4.20250611,<3",
-    "ruff>=0.12.7,<0.13",
+    "ruff>=0.12.7,<0.14",
     "pyright>=1.1.403,<2",
     "nickineering-ruff-config>=0.2.0,<0.3",
 ]
