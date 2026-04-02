@@ -17,7 +17,7 @@ update-ruff-base = "nickineering_ruff_config:update_ruff_base"
 
 [dependency-groups]
 dev = [
-    "pytest>=8.4.1,<9",
+    "pytest>=8.4.1,<10",
     "requests-mock>=1.12.1,<2",
     "types-requests>=2.32.4.20250611,<3",
     "ruff>=0.12.7,<0.13",
